@@ -1,0 +1,10 @@
+# Core dependencies. Installed with:  python -m pip install -r requirements.txt
+streamlit>=1.35
+sympy>=1.12
+numpy>=1.26
+matplotlib>=3.8
+
+# Note: pandas is NOT required. Streamlit pulls it in for st.dataframe, but the
+# app deliberately renders its tables as Markdown instead, because pandas'
+# compiled extensions can be blocked by Windows application-control policies on
+# some machines. Keeping pandas out of the call path avoids that failure.
